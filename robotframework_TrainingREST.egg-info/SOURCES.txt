@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+robotframework_TrainingREST.egg-info/PKG-INFO
+robotframework_TrainingREST.egg-info/SOURCES.txt
+robotframework_TrainingREST.egg-info/dependency_links.txt
+robotframework_TrainingREST.egg-info/requires.txt
+robotframework_TrainingREST.egg-info/top_level.txt
+test/test_1.py
