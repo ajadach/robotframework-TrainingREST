@@ -7,7 +7,6 @@ driver = GoRESTDriver()
 driver.generate_token(token=TOKEN)
 driver.login('admin',  'password')
 
-
 def test_token_in_headers():
     response = driver.get_token_in_headers()
     assert response[0]['id']
