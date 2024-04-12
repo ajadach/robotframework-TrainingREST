@@ -68,3 +68,17 @@ class TokenURl(Common):
         }
         response = requests.request("PATCH", url=self.url_token.replace('users', f'users/{id}'), headers={}, data=data)
         return self._logger_response(response)
+
+    @keyword("Delete User: Token In URL")
+    def delete_user_via_token_in_url(self, id):
+        """ Delete User via User And Password.
+
+         *Arguments:*
+         | =Name= | =Description= | =Example value= |
+         | id | ID for user from database | 6849725 |
+
+         *Return*
+         | payload | dict object from response |
+         """
+        response = requests.request("DELETE", url=self.url_token.replace('users', f'users/{id}'), headers={}, data={})
+        return self._logger_response(response)

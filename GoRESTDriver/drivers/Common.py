@@ -31,9 +31,12 @@ class Common:
     def _logger_response(self, response):
         print('=== RESPONSE ===')
         print("Headers:", json.dumps(dict(response.headers), indent=4))
-        print("Body:", json.dumps(response.json(), indent=2))
+
         print("Status Code:", response.status_code, '\n')
         if response.status_code not in [200, 201, 202, 204]:
             raise ValueError("Wrong Status Code")
-        return response.json()
-
+        try:
+            print("Body:", json.dumps(response.json(), indent=2))
+            return response.json()
+        except Exception:
+            pass
