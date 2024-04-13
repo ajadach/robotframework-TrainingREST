@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: robotframework-TrainingREST
+Version: 0.1.2
+Summary: Go REST Library for Robot Framework
+Author: Artur Ziółkowksi
+Author-email: Artur Ziolkowksi <artur.k.ziolkowski@gmail.com>
+License: Apache License 2.0
+Project-URL: Homepage, https://github.com/ajadach/robotframework-TrainingREST
+Project-URL: Keyword docs, https://github.com/ajadach/robotframework-TrainingREST
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# robotframework-TrainingREST
+Example RFW/py driver for training REST
